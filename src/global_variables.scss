@@ -1,0 +1,21 @@
+$main-font-color: #ffffff;
+$main-articles-font-color: #d8d8d8;
+$active-articles-font-color: #a09e9e;
+$hovered-articles-font-color: #c4c3c3;
+$navigation-line-color: #1c1c1c;
+$nav-selected-item-underline-color: #0dea7e;
+$global-selected-item-underline-color: #0dea7fa1;
+$nav-item-underline-color: #0dea7e00;
+$search-bar-background-color: #474747;
+$nav-selected-item-background-color: #2d2b2b;
+$nav-hovered-item-background-color: #222020;
+$nav-height: 3.7rem;
+$article-width: 70em;
+@font-face {
+    font-family: HKGrotestk-Light-Legacy;
+    src: url("assets/fonts/HKGrotesk-LightLegacy.eot"); /* IE9 Compat Modes */
+    src: url("assets/fonts/HKGrotesk-LightLegacy.eot") format("embedded-opentype"), /* IE6-IE8 */
+         url("assets/fonts/HKGrotesk-LightLegacy.woff") format("woff"), /* Modern Browsers */
+         url("assets/fonts/HKGrotesk-LightLegacy.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("assets/fonts/HKGrotesk-LightLegacy.svg") format("svg"); /* Legacy iOS */
+}

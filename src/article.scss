@@ -1,0 +1,46 @@
+@import './global_variables.scss';
+
+#article-wrap > img{
+    position: relative;
+    display: inline-block;
+    max-width: $article-width;
+    height: auto;
+}
+
+#article-wrap > h1,
+#article-wrap > h2,
+#article-wrap > p{
+    position: relative;
+    left: 1rem;
+    display: block;
+    color: $main-articles-font-color;
+    max-width: $article-width;
+    font-weight: normal;
+    margin: 0;
+    font-family: HKGrotestk-Light-Legacy;
+}
+
+#article-wrap > h1:hover,
+#article-wrap > h2:hover,
+#article-wrap > p:hover{
+    color: $hovered-articles-font-color;
+}
+
+#article-wrap > h1:active,
+#article-wrap > h2:active,
+#article-wrap > p:active{
+    color: $active-articles-font-color;
+}
+
+#article-wrap{
+    position: relative;
+    margin: 0.5rem 0;
+    border-bottom: 0.25rem solid $nav-item-underline-color;
+    border-top: 0.25rem solid $nav-item-underline-color;
+    transition: border-color 0.5s;
+}
+#article-wrap:hover{
+    border-bottom: 0.25rem solid $global-selected-item-underline-color;
+    border-top: 0.25rem solid $global-selected-item-underline-color;
+    transition: border-color 0.5s;
+}

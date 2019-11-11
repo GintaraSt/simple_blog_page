@@ -1,0 +1,29 @@
+@import './global_variables';
+
+#search-bar > input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.25rem 2rem 0.25rem 0.75rem;
+    font-size: 1.05rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    color: $main-font-color;
+    background: $search-bar-background-color;
+}
+
+#search-bar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#search-bar > img{
+    position: absolute;
+    right: -2.1rem;
+    top: 0.25rem;
+    max-height: 100%;
+}

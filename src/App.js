@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
+import Article from './Article';
+import NavigationBar from './NavigationBar';
+import SearchBar from './SearchBar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(){
+    super();
+  }
+
+  render() {
+    let style = {
+      position: "relative",
+      align: "center"
+    }
+    return (
+      <div id="site-wrap" >
+        <NavigationBar />
+        <div id="data">
+          <div id="search-bar-wrap">
+            <SearchBar placeholder="Search"/>
+          </div>
+          <div id="articles-wrap">
+            <Article />
+            <Article />
+            <Article />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
